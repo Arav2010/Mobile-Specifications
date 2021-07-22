@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>Mobile Specifications</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+       <div class="main">
+           <nav>
+               <div class="logo">
+                   <img src="smartphone.png">
+               </div>
+               <div class="nav-links">
+                   <ul>
+                       <li><a href="#">Home</a></li>
+                       <li><a href="https://www.samsung.com/in/smartphones/galaxy-s21-ultra-5g/">Phone</a></li>
+                       <li><a href="https://www.samsung.com/in/smartphones/galaxy-s21-ultra-5g/accessories/">Accessories</a></li>
+                       <li><a href="https://www.samsung.com/ca/support/mobile-devices/enjoy-s-pens-writing-experience-with-galaxy-s21-ultra/">S Pen</a></li>
+                   </ul>
+               </div>
+           </nav>
+           
+           <div class="information">
+               <div class="overlay"></div>
+               <img src="S21%20Ultra.jpg" class="mobile">
+                <div id="circle">
+                    <div class="feature one">
+                        <img src="camera.png">
+                        <div>
+                            <h1>Camera</h1>
+                            <p>108MP Wide</p>
+                        </div>
+                    </div>
+                    <div class="feature two">
+                        <img src="speed.png">
+                        <div>
+                            <h1>Processor</h1>
+                            <p>2.9GHz max. CPU speed Octa-core</p>
+                        </div>
+                    </div>
+                    <div class="feature three">
+                        <img src="display.png">
+                        <div>
+                            <h1>Display</h1>
+                            <p>17.3cm (6.8")</p>
+                        </div>
+                    </div>
+                    <div class="feature four">
+                        <img src="battery.png">
+                        <div>
+                            <h1>Battery Life</h1>
+                            <p>5000mAh</p>
+                        </div>
+                    </div>
+               </div>
+           </div>
+           
+           <div class="controls">
+               <img src="up-arrow.png" id="upBtn">
+               <h3>Features</h3>
+               <img src="up-arrow.png" id="downBtn">
+           </div>
+           
+       </div>
+        
+        
+       <script>
+           var circle = document.getElementById("circle");
+           var upBtn = document.getElementById("upBtn");
+           var downBtn = document.getElementById("downBtn");
+           
+           var rotateValue = circle.style.transform;
+           var rotateSum;
+           
+           
+           upBtn.onclick = function()
+           {
+               rotateSum = rotateValue +"rotate(-90deg)";
+               circle.style.transform = rotateSum;
+               rotateValue = rotateSum;
+           }
+           downBtn.onclick = function()
+           {
+               rotateSum = rotateValue +"rotate(90deg)";
+               circle.style.transform = rotateSum;
+               rotateValue = rotateSum;
+           }
+        </script>
+        
+    </body>
+</html>
